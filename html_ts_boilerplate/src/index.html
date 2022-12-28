@@ -14,55 +14,60 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Mitr:wght@400;500;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,500&display=swap");
+    </style>
     <link rel="stylesheet" href="/styles.css" />
     <title>cleaning landing page</title>
   </head>
   <body>
     <header>
-      <div class="container header-container">
-        <div class="logo-container">
+      <div class="container header-container d-flex flex-column">
+        <div class="d-flex logo-container">
           <img
-            src="assets/images/Round Rock Cleaning Services.png"
+            src="assets/images/Слой 2.png"
             alt="Round Rock Cleaning Services Logo"
             class="r-r-c-logo"
           />
+          <img
+            src="assets/images/Round Rock Cleaning Services.png"
+            alt="Round Rock Cleaning Services Logo words"
+            class="r-r-c-logo-w"
+          />
         </div>
 
-        <div class="container px-4">
-          <div class="row gx-5">
-            <div class="col col-6">
-              <div class="p-3 border-none bg-none">
-                <h1>Lorem ipsum Lorem</h1>
-                <p>
+        <div class="containe p-0 mt-4 d-flex flex-row mx-5">
+          <div class="row">
+            <div class="col col-6 p-0 first-header-column">
+              <div
+                class="p-0 border-none bg-none d-flex flex-column first-header-column-content"
+              >
+                <h1 class="header-heading">Lorem ipsum Lorem</h1>
+                <p class="header-parag">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s, when an unknown
                   printer took a galley of type and scrambled
                 </p>
-                <ul>
-                  <li>
-                    <div class="services-option">
+                <ul class="services-options p-0 m-0">
+                  <li class="services-options">
+                    <div class="services-option d-flex">
                       <img
                         src="assets/images/carbon_rain-drop.png"
                         alt=""
                       />Services 1
                     </div>
                   </li>
-                  <li>
-                    <div class="services-option">
+                  <li class="services-options">
+                    <div class="services-option d-flex">
                       <img
                         src="assets/images/carbon_rain-drop.png"
                         alt=""
                       />Services 2
                     </div>
                   </li>
-                  <li>
-                    <div class="services-option">
+                  <li class="services-options">
+                    <div class="services-option d-flex">
                       <img
                         src="assets/images/carbon_rain-drop.png"
                         alt=""
@@ -71,38 +76,61 @@
                   </li>
                 </ul>
                 <div class="button-services">
-                  <button type="button" class="btn btn-primary" id="i-need-help">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    id="i-need-help"
+                  >
                     I need help
                   </button>
                 </div>
               </div>
             </div>
-            <div class="col col-6">
-              <div class="p-3 border bg-light">
-                <h3 class="contact-us">
-Contact us
-</h3>
-<p></p>
-<p></p>
-<p></p>
-<div class="button-services">
-    <button type="button" class="btn btn-primary" id="contact-us">
-      I need help
-    </button>
-  </div>
-</div>
-<h3 class="contact-us-container">
 
+            <div class="col col-6 p-0 second-header-column">
+              <h3 class="contact-us">Contact us</h3>
+              <p class="empty-element-field"></p>
+              <p class="empty-element-field"></p>
+              <p class="empty-element-field"></p>
+              <div class="button-services">
+                <button type="button" class="btn" id="contact-us"></button>
               </div>
             </div>
           </div>
         </div>
-
-       
-        </div>
       </div>
     </header>
-
+    <div class="container about-us-container">
+      <div class="about-us-content">
+        <div class="about-us-header">
+          <h3 class="about-us-header">About Us</h3>
+        </div>
+        <div class="container px-4 about-us-numbered-info mt-5">
+          <div class="row">
+            <div class="col">
+              <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+            <div class="col">
+              <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+            <div class="col">
+              <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+            <div class="col">
+              <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+            <div class="col">
+              <div class="p-3 border bg-light">Custom column padding</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="/scripts.js"></script>
   </body>
 </html>
