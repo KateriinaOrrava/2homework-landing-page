@@ -44,11 +44,6 @@ a:not([class]) {
 }
 
 /* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
-  display: block;
-}
 
 /* Inherit fonts for inputs and buttons */
 input,
@@ -57,7 +52,11 @@ textarea,
 select {
   font: inherit;
 }
-
+button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: #2ebaeb;
+}
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
@@ -76,6 +75,9 @@ select {
 body {
   width: 1903px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5%;
 }
 header {
   background-image: url(assets/images/1.png);
@@ -153,7 +155,11 @@ li.services-options {
   color: #2e8cad;
 }
 
-#i-need-help {
+#i-need-help-3,
+#i-need-help-1,
+#i-need-help-4,
+#i-need-help-2 {
+  outline: 1px solid black;
   background: #2ebaeb;
   color: #ffffff;
   border: none;
@@ -165,12 +171,24 @@ li.services-options {
   line-height: 24px;
   display: flex;
   align-items: center;
+  opacity: 0.6;
+  transition: 0.3s;
   /* identical to box height, or 150% */
 
   display: flex;
   justify-content: center;
   width: 160px;
   height: 50px;
+}
+#i-need-help-3,
+#i-need-help-4 {
+  margin-bottom: 50px;
+}
+#i-need-help-1:hover,
+#i-need-help-2:hover,
+#i-need-help-3:hover,
+#i-need-help-4:hover {
+  opacity: 1;
 }
 .second-header-column {
   width: 480px;
@@ -183,7 +201,9 @@ li.services-options {
   justify-content: center;
 }
 h3.contact-us,
-h3.about-us-header {
+h2.about-us,
+h2.services,
+h2.testymonials {
   font-family: "Mitr";
   font-style: normal;
   font-weight: 600;
@@ -215,13 +235,151 @@ p.empty-element-field {
 }
 ////////////////////
 .about-us-container {
+  width: 100%;
   margin-top: -129px;
   background-color: white;
-}
-
-.about-us-header {
   display: flex;
+  justify-content: center;
+  padding-bottom: 54px;
+}
+.about-us-container-content {
+  width: 1090px;
+  display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  align-content: center;
+  gap: 42px;
+}
+
+.container-with-facts {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.first-fact-row,
+.second-fact-row {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+p.about-us-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+
+  /* Gray 2 */
+
+  color: #4f4f4f;
+}
+///////////////////////////
+.services-container,
+.testymonials-container {
+  padding-top: 54px;
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.testymonials-container {
+  background-color: #95d4eb;
+}
+.services-container-content,
+.header-container-services,
+.testymonials-container-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.all-services {
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+}
+.container-with-services {
+  width: 385px;
+  border-radius: 30px 30px 30px 30px;
+  background: #ffffff;
+}
+.services-header-small p {
+  padding: 30px 30px 10px 30px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  color: #000000;
+}
+.services-description p {
+  padding: 0px 30px 50px 30px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+
+  color: #000000;
+}
+////////////////
+footer {
+  background-color: #47626b;
+  height: 100px;
+}
+.all-testymonials {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container-with-testymonial {
+  background-color: #ffffff;
+  box-shadow: 0px 20px 20px rgba(129, 209, 255, 0.2);
+  border-radius: 40px;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+}
+.testimonial-second-row,
+.testimonial-first-row {
+  width: 1090px;
+  display: flex;
+  flex-direction: row;
+  gap: 46px;
+}
+
+.testimonial-text {
+}
+.testimonial-name {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height, or 122% */
+
+  color: #50b2ea;
+}
+.testimonial-review {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  /* or 157% */
+  padding-top: 13px;
+  padding-bottom: 11px;
+
+  color: #19435a;
+}
+.testimonial-stars {
+  display: flex;
+  flex-direction: row;
+  gap: 9px;
 }
