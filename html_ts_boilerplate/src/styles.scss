@@ -383,3 +383,29 @@ footer {
   flex-direction: row;
   gap: 9px;
 }
+@media only screen and (max-width: 600px) {
+  header {
+    background-image: none;
+  }
+  .services-container,
+  .about-us-container {
+    width: 550px;
+  }
+  .testimonial-first-row,
+  .testimonial-second-row,
+  .services-container-content,
+  .all-services,
+  .first-fact-row,
+  .second-fact-row,
+  .containe {
+    display: flex;
+    flex-direction: column;
+  }
+  .containe {
+    margin-bottom: 50px;
+  }
+  .first-fact-row,
+  .second-fact-row {
+    padding-left: 10px;
+  }
+}
